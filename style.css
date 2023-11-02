@@ -62,6 +62,7 @@ body {
   background-color: var(--Light_Grayish_Blue);
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -221,4 +222,15 @@ body {
   .hidden_icon{
     display: none;
   }
+}
+
+/* attribution styling */
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
 }
