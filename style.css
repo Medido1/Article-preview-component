@@ -72,7 +72,7 @@ body {
   font-size: var(--font_size);
   background-color: white;
   width: 90vw;
-  height: 550px;
+  max-height: 300px;
   max-width: 660px;
   border-radius: .5rem;
   position: relative;
