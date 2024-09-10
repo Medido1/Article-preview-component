@@ -60,7 +60,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
   background-color: var(--Light_Grayish_Blue);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -72,10 +72,11 @@ body {
   font-size: var(--font_size);
   background-color: white;
   width: 90vw;
-  max-height: 300px;
   max-width: 660px;
   border-radius: .5rem;
   position: relative;
+  height: calc(100vh - 11vw);
+  margin-top: 1rem;
 }
 
 .img_container {
@@ -88,6 +89,7 @@ body {
   width: 100%;
   object-fit: cover;
   object-position: top center;
+  border-radius: .5rem .5rem 0 0;
 }
 
 .content {
@@ -177,7 +179,9 @@ body {
 @media (min-width : 750px){
   .container {
     display: flex;
-    height: 40vh;
+    height: calc(50vh - 1vw);
+    min-height: 200px;
+    max-height: 300px;
   }
   .img_container {
     height: 100%;
